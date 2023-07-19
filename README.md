@@ -37,13 +37,20 @@ This Terraform configuration creates an Azure Resource Group with the specified 
    ```shell
    terraform init
 
+
+
 Review the execution plan:
 
 terraform plan
 
+
+
+
 Create the Azure resource group:
 
 terraform apply
+
+
 
 Clean up:
 
