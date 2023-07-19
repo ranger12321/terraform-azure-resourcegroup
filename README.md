@@ -37,25 +37,18 @@ This Terraform configuration creates an Azure Resource Group with the specified 
    ```shell
    terraform init
 
+5. Initialize Terraform in your project directory
+   ```shell
+   terraform init
 
+6. Create an execution plan to preview the changes that Terraform will make
+   ```shell
+   terraform plan
 
-Review the execution plan:
+7. Apply the changes and create/update resources in your infrastructure
+   ```shell
+   terraform apply
 
-terraform plan
-
-
-
-
-Create the Azure resource group:
-
-terraform apply
-
-
-
-Clean up:
-
-terraform destroy
-
-
-
-```
+8. Destroy all the resources created by Terraform
+   ```shell
+   terraform destroy
