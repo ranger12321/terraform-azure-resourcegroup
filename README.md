@@ -1,27 +1,27 @@
+---
+
 # Resource Group Module
 
 ### Description
-This module is for deploying `resource group` resource in Azure using Terraform
+This Terraform module is used to deploy an Azure `resource group` resource in Azure.
 
 ### Inputs
-|Variable Name|Type|Required| Default |Description|
-|:------|:------|:-----|:-----|:-----|
-| group_name| `string` | `true` | | Resource Group Name
-| location | `string` | `true` | | Resource Group Location
-| tags | `map(any)` | `false` | {} | Resource Group Tags
-
+| Variable Name | Type     | Required | Default | Description                  |
+|---------------|----------|----------|---------|------------------------------|
+| group_name    | `string` | `true`   |         | Resource Group Name          |
+| location      | `string` | `true`   |         | Resource Group Location      |
+| tags          | `map(any)` | `false` | `{}`    | Resource Group Tags          |
 
 ### Outputs
-|Variable Name|Type| Default |Description|
-|:------|:------|:-----|:-----|
-| name| `string` | | Name of the created resource group
-| location| `string` | | Location of the created resource group
-| id| `string` | | Id of the created resource group
+| Variable Name | Type     | Description                 |
+|---------------|----------|-----------------------------|
+| name          | `string` | Name of the created resource group |
+| location      | `string` | Location of the created resource group |
+| id            | `string` | Id of the created resource group |
 
+### Module Usage
 
-### Module Usage  ##########
-
-# Terraform Azure Resource Group
+#### Terraform Azure Resource Group
 
 This Terraform configuration creates an Azure Resource Group with the specified properties.
 
@@ -36,19 +36,21 @@ This Terraform configuration creates an Azure Resource Group with the specified 
 4. Initialize the Terraform project:
    ```shell
    terraform init
+   ```
 
-5. Initialize Terraform in your project directory
-   ```shell
-   terraform init
-
-6. Create an execution plan to preview the changes that Terraform will make
+5. Plan the execution to preview the changes that Terraform will make:
    ```shell
    terraform plan
+   ```
 
-7. Apply the changes and create/update resources in your infrastructure
+6. Apply the changes and create/update resources in your infrastructure:
    ```shell
    terraform apply
+   ```
 
-8. Destroy all the resources created by Terraform
+7. Destroy all the resources created by Terraform:
    ```shell
    terraform destroy
+   ```
+
+---
