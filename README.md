@@ -1,4 +1,3 @@
----
 
 # Resource Group Module
 
@@ -53,4 +52,3 @@ This Terraform configuration creates an Azure Resource Group with the specified 
    terraform destroy
    ```
 
----
